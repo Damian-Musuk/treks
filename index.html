@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treks</title>
+  <link rel="icon" href="bibbulmun/icons/icon.svg" type="image/svg+xml">
+  <style>
+    :root { --bg:#f4f1ea; --surface:#fffdf8; --ink:#1f2a22; --muted:#5d6a60; --brand:#2f4a3a; color-scheme: light; }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#121914; --surface:#1b241e; --ink:#e8ebe4; --muted:#9aa79d; --brand:#6fc597; color-scheme: dark; } }
+    :root[data-theme="dark"] { --bg:#121914; --surface:#1b241e; --ink:#e8ebe4; --muted:#9aa79d; --brand:#6fc597; color-scheme: dark; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, sans-serif; }
+    main { max-width:640px; margin:0 auto; padding:48px 16px; }
+    h1 { margin:0 0 4px; font-size:32px; }
+    p { color:var(--muted); margin:0 0 24px; }
+    a.card { display:flex; gap:16px; align-items:center; background:var(--surface); color:inherit; text-decoration:none; padding:16px; border-radius:16px; box-shadow:0 1px 2px rgb(0 0 0/6%),0 4px 14px rgb(0 0 0/5%); }
+    a.card b { display:block; font-size:18px; color:var(--brand); }
+    a.card span { color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Treks</h1>
+    <p>Damian's long walks. Follow along here.</p>
+    <a class="card" href="bibbulmun/">
+      <img src="bibbulmun/icons/icon.svg" alt="" width="56" height="56">
+      <div><b>Bibbulmun Track</b><span>Follow along: 1,000 km from Kalamunda to Albany, walked in sections from 2027</span></div>
+    </a>
+  </main>
+</body>
+</html>

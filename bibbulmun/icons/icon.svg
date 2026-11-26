@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#2f4a3a"/>
+  <path d="M56 380 L190 196 L260 290 L330 210 L456 380 Z" fill="#6f9b7e"/>
+  <path d="M56 380 L190 196 L230 250 L150 380 Z" fill="#8bb399"/>
+  <!-- winding trail -->
+  <path d="M120 430 C 190 400, 220 460, 290 430 S 380 390, 420 410" fill="none" stroke="#f2c14e" stroke-width="26" stroke-linecap="round"/>
+  <circle cx="420" cy="410" r="20" fill="#f2c14e"/>
+</svg>

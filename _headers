@@ -1,0 +1,7 @@
+# Cloudflare Pages headers (ignored by other hosts).
+/bibbulmun/sw.js
+  Cache-Control: no-cache
+/bibbulmun/data/progress.json
+  Cache-Control: no-cache
+/bibbulmun/post/*
+  X-Robots-Tag: noindex

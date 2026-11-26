@@ -1,0 +1,954 @@
+{
+ "source": "https://www.bibbulmuntrack.org.au/trip-planner/distance-calculator/",
+ "asof": "2026-11-26",
+ "stops": [
+  {
+   "name": "Kalamunda",
+   "km": 0,
+   "type": "town",
+   "next_km": 6.6
+  },
+  {
+   "name": "Fern Road",
+   "km": 6.6,
+   "type": "access",
+   "next_km": 1.7
+  },
+  {
+   "name": "Trails Hub Cafe (Paulls Valley Road)",
+   "km": 8.3,
+   "type": "access",
+   "next_km": 0.9
+  },
+  {
+   "name": "Asher Road",
+   "km": 9.2,
+   "type": "access",
+   "next_km": 1.9
+  },
+  {
+   "name": "Hewett's Hill Campsite",
+   "km": 11.1,
+   "type": "campsite",
+   "next_km": 3.5
+  },
+  {
+   "name": "South Ledge",
+   "km": 14.6,
+   "type": "access",
+   "next_km": 2.6
+  },
+  {
+   "name": "Mundaring Weir Hotel",
+   "km": 17.2,
+   "type": "access",
+   "next_km": 1.9
+  },
+  {
+   "name": "Perth Hills Discovery Centre",
+   "km": 19.1,
+   "type": "access",
+   "next_km": 2.7
+  },
+  {
+   "name": "Ball Creek Campsite",
+   "km": 21.8,
+   "type": "campsite",
+   "next_km": 8.7
+  },
+  {
+   "name": "Helena Campsite",
+   "km": 30.5,
+   "type": "campsite",
+   "next_km": 9.5
+  },
+  {
+   "name": "Waalegh Campsite",
+   "km": 40.0,
+   "type": "campsite",
+   "next_km": 8.6
+  },
+  {
+   "name": "Beraking Campsite",
+   "km": 48.6,
+   "type": "campsite",
+   "next_km": 11.4
+  },
+  {
+   "name": "Dale Road picnic area",
+   "km": 60.0,
+   "type": "access",
+   "next_km": 2.7
+  },
+  {
+   "name": "Mt Dale Campsite",
+   "km": 62.7,
+   "type": "campsite",
+   "next_km": 7.7
+  },
+  {
+   "name": "Brookton Campsite",
+   "km": 70.4,
+   "type": "campsite",
+   "next_km": 2.6
+  },
+  {
+   "name": "Brookton Highway",
+   "km": 73.0,
+   "type": "access",
+   "next_km": 8.6
+  },
+  {
+   "name": "Canning Campsite",
+   "km": 81.6,
+   "type": "campsite",
+   "next_km": 15.6
+  },
+  {
+   "name": "Monadnocks Campsite",
+   "km": 97.2,
+   "type": "campsite",
+   "next_km": 6.8
+  },
+  {
+   "name": "Sullivan Rock spur trail",
+   "km": 104.0,
+   "type": "access",
+   "next_km": 6.0
+  },
+  {
+   "name": "Mt Cooke Campsite",
+   "km": 110.0,
+   "type": "campsite",
+   "next_km": 13.7
+  },
+  {
+   "name": "Nerang Campsite",
+   "km": 123.7,
+   "type": "campsite",
+   "next_km": 15.6
+  },
+  {
+   "name": "Wearne Road",
+   "km": 139.3,
+   "type": "access",
+   "next_km": 0.9
+  },
+  {
+   "name": "Gringer Creek Campsite",
+   "km": 140.2,
+   "type": "campsite",
+   "next_km": 2.4
+  },
+  {
+   "name": "Albany Highway",
+   "km": 142.6,
+   "type": "access",
+   "next_km": 13.8
+  },
+  {
+   "name": "White Horse Hills Campsite",
+   "km": 156.4,
+   "type": "campsite",
+   "next_km": 14.3
+  },
+  {
+   "name": "Mt Wells Campsite",
+   "km": 170.7,
+   "type": "campsite",
+   "next_km": 15.0
+  },
+  {
+   "name": "Chadoora Campsite",
+   "km": 185.7,
+   "type": "campsite",
+   "next_km": 8.7
+  },
+  {
+   "name": "Inglehope Rail Crossing",
+   "km": 194.4,
+   "type": "access",
+   "next_km": 11.9
+  },
+  {
+   "name": "Dwellingup",
+   "km": 206.3,
+   "type": "town",
+   "next_km": 6.1
+  },
+  {
+   "name": "Nanga Road",
+   "km": 212.4,
+   "type": "access",
+   "next_km": 1.8
+  },
+  {
+   "name": "River Road",
+   "km": 214.2,
+   "type": "access",
+   "next_km": 5.4
+  },
+  {
+   "name": "Swamp Oak Campsite",
+   "km": 219.6,
+   "type": "campsite",
+   "next_km": 7.5
+  },
+  {
+   "name": "Yarragil Form",
+   "km": 227.1,
+   "type": "access",
+   "next_km": 11.7
+  },
+  {
+   "name": "Murray Campsite",
+   "km": 238.8,
+   "type": "campsite",
+   "next_km": 14.2
+  },
+  {
+   "name": "Driver Road",
+   "km": 253.0,
+   "type": "access",
+   "next_km": 3.6
+  },
+  {
+   "name": "Dookanelly Campsite",
+   "km": 256.6,
+   "type": "campsite",
+   "next_km": 12.1
+  },
+  {
+   "name": "Harvey-Quindanning Road",
+   "km": 268.7,
+   "type": "access",
+   "next_km": 9.6
+  },
+  {
+   "name": "Possum Springs Campsite",
+   "km": 278.3,
+   "type": "campsite",
+   "next_km": 19.3
+  },
+  {
+   "name": "Yourdamung Campsite",
+   "km": 297.6,
+   "type": "campsite",
+   "next_km": 14.3
+  },
+  {
+   "name": "Harris Dam Campsite",
+   "km": 311.9,
+   "type": "campsite",
+   "next_km": 3.6
+  },
+  {
+   "name": "Harris Dam Picnic Area",
+   "km": 315.5,
+   "type": "access",
+   "next_km": 9.4
+  },
+  {
+   "name": "Mornington Road",
+   "km": 324.9,
+   "type": "access",
+   "next_km": 1.4
+  },
+  {
+   "name": "Patstone Road",
+   "km": 326.3,
+   "type": "access",
+   "next_km": 2.2
+  },
+  {
+   "name": "Coalfields Highway",
+   "km": 328.5,
+   "type": "access",
+   "next_km": 5.7
+  },
+  {
+   "name": "Collie",
+   "km": 334.2,
+   "type": "town",
+   "next_km": 5.8
+  },
+  {
+   "name": "Mungalup Road Bridge",
+   "km": 340.0,
+   "type": "access",
+   "next_km": 2.4
+  },
+  {
+   "name": "Mungalup Road (south)",
+   "km": 342.4,
+   "type": "access",
+   "next_km": 11.3
+  },
+  {
+   "name": "Yabberup Campsite",
+   "km": 353.7,
+   "type": "campsite",
+   "next_km": 7.3
+  },
+  {
+   "name": "Collie-Preston Road (after Glen Mervyn Dam)",
+   "km": 361.0,
+   "type": "access",
+   "next_km": 4.9
+  },
+  {
+   "name": "Mumballup Forest Tavern (Boyup Brook Road)",
+   "km": 365.9,
+   "type": "access",
+   "next_km": 7.9
+  },
+  {
+   "name": "Noggerup Campsite",
+   "km": 373.8,
+   "type": "campsite",
+   "next_km": 12.3
+  },
+  {
+   "name": "Lowden-Grimwade Road",
+   "km": 386.1,
+   "type": "access",
+   "next_km": 10.2
+  },
+  {
+   "name": "Grimwade Campsite",
+   "km": 396.3,
+   "type": "campsite",
+   "next_km": 6.7
+  },
+  {
+   "name": "Kirup-Grimwade Road",
+   "km": 403.0,
+   "type": "access",
+   "next_km": 8.9
+  },
+  {
+   "name": "Balingup-Grimwade Road",
+   "km": 411.9,
+   "type": "access",
+   "next_km": 4.0
+  },
+  {
+   "name": "Jayes Road",
+   "km": 415.9,
+   "type": "access",
+   "next_km": 3.3
+  },
+  {
+   "name": "Balingup",
+   "km": 419.2,
+   "type": "town",
+   "next_km": 2.1
+  },
+  {
+   "name": "Golden Valley Tree Park",
+   "km": 421.3,
+   "type": "access",
+   "next_km": 3.0
+  },
+  {
+   "name": "Hay Road",
+   "km": 424.3,
+   "type": "access",
+   "next_km": 6.1
+  },
+  {
+   "name": "Spring Gully Road (east)",
+   "km": 430.4,
+   "type": "access",
+   "next_km": 2.7
+  },
+  {
+   "name": "Spring Gully Road/Southampton Rd intersection",
+   "km": 433.1,
+   "type": "access",
+   "next_km": 3.2
+  },
+  {
+   "name": "Blackwood Campsite",
+   "km": 436.3,
+   "type": "campsite",
+   "next_km": 3.9
+  },
+  {
+   "name": "Southhampton Bridge",
+   "km": 440.2,
+   "type": "access",
+   "next_km": 14.2
+  },
+  {
+   "name": "Gregory Brook Campsite",
+   "km": 454.4,
+   "type": "campsite",
+   "next_km": 3.7
+  },
+  {
+   "name": "Karri Gully spur trail",
+   "km": 458.1,
+   "type": "access",
+   "next_km": 0.9
+  },
+  {
+   "name": "Brockman Highway (west)",
+   "km": 459.0,
+   "type": "access",
+   "next_km": 4.8
+  },
+  {
+   "name": "Willow Springs",
+   "km": 463.8,
+   "type": "access",
+   "next_km": 11.4
+  },
+  {
+   "name": "Donnelly River Village",
+   "km": 475.2,
+   "type": "town",
+   "next_km": 8.5
+  },
+  {
+   "name": "Shoe Road/Tom Rd intersection",
+   "km": 483.7,
+   "type": "access",
+   "next_km": 1.5
+  },
+  {
+   "name": "Mack Rd",
+   "km": 485.2,
+   "type": "access",
+   "next_km": 6.2
+  },
+  {
+   "name": "Tom Road Campsite",
+   "km": 491.4,
+   "type": "campsite",
+   "next_km": 1.1
+  },
+  {
+   "name": "Donnelly Drive/Panda Road/Twin Bridges (south)",
+   "km": 492.5,
+   "type": "access",
+   "next_km": 8.1
+  },
+  {
+   "name": "Green's Island access road",
+   "km": 500.6,
+   "type": "access",
+   "next_km": 2.1
+  },
+  {
+   "name": "Graphite Road (One Tree Bridge)",
+   "km": 502.7,
+   "type": "access",
+   "next_km": 10.6
+  },
+  {
+   "name": "Chappels Bridge",
+   "km": 513.3,
+   "type": "access",
+   "next_km": 1.6
+  },
+  {
+   "name": "Boarding House Campsite",
+   "km": 514.9,
+   "type": "campsite",
+   "next_km": 0.8
+  },
+  {
+   "name": "Palings Road",
+   "km": 515.7,
+   "type": "access",
+   "next_km": 18.7
+  },
+  {
+   "name": "Beavis Campsite",
+   "km": 534.4,
+   "type": "campsite",
+   "next_km": 5.4
+  },
+  {
+   "name": "Seven Day Road",
+   "km": 539.8,
+   "type": "access",
+   "next_km": 11.0
+  },
+  {
+   "name": "Beedelup Road (Karri Forest Explorer Drive)",
+   "km": 550.8,
+   "type": "access",
+   "next_km": 2.1
+  },
+  {
+   "name": "Beedelup Falls",
+   "km": 552.9,
+   "type": "access",
+   "next_km": 1.8
+  },
+  {
+   "name": "Beedelup Campsite",
+   "km": 554.7,
+   "type": "campsite",
+   "next_km": 3.2
+  },
+  {
+   "name": "Channybearup Road",
+   "km": 557.9,
+   "type": "access",
+   "next_km": 9.1
+  },
+  {
+   "name": "Stirling Road",
+   "km": 567.0,
+   "type": "access",
+   "next_km": 5.4
+  },
+  {
+   "name": "Big Brook Dam",
+   "km": 572.4,
+   "type": "access",
+   "next_km": 6.3
+  },
+  {
+   "name": "Pemberton",
+   "km": 578.7,
+   "type": "town",
+   "next_km": 3.1
+  },
+  {
+   "name": "Gloucester Tree",
+   "km": 581.8,
+   "type": "access",
+   "next_km": 5.3
+  },
+  {
+   "name": "Cascades spur trail",
+   "km": 587.1,
+   "type": "access",
+   "next_km": 3.6
+  },
+  {
+   "name": "Gloucester Road",
+   "km": 590.7,
+   "type": "access",
+   "next_km": 8.0
+  },
+  {
+   "name": "Warren Campsite",
+   "km": 598.7,
+   "type": "campsite",
+   "next_km": 1.5
+  },
+  {
+   "name": "River Road Bridge",
+   "km": 600.2,
+   "type": "access",
+   "next_km": 14.6
+  },
+  {
+   "name": "Wheatley Coast Road (north)",
+   "km": 614.8,
+   "type": "access",
+   "next_km": 4.0
+  },
+  {
+   "name": "Hill Brook Road",
+   "km": 618.8,
+   "type": "access",
+   "next_km": 0.6
+  },
+  {
+   "name": "Schafer Campsite",
+   "km": 619.4,
+   "type": "campsite",
+   "next_km": 1.4
+  },
+  {
+   "name": "Karri Hill Road",
+   "km": 620.8,
+   "type": "access",
+   "next_km": 1.5
+  },
+  {
+   "name": "Lane-Poole Road",
+   "km": 622.3,
+   "type": "access",
+   "next_km": 6.1
+  },
+  {
+   "name": "Middleton Road",
+   "km": 628.4,
+   "type": "access",
+   "next_km": 3.7
+  },
+  {
+   "name": "Muirillup Road",
+   "km": 632.1,
+   "type": "access",
+   "next_km": 1.8
+  },
+  {
+   "name": "Northcliffe",
+   "km": 633.9,
+   "type": "town",
+   "next_km": 3.6
+  },
+  {
+   "name": "Windy Harbour Road",
+   "km": 637.5,
+   "type": "access",
+   "next_km": 12.1
+  },
+  {
+   "name": "Gardner Campsite",
+   "km": 649.6,
+   "type": "campsite",
+   "next_km": 7.6
+  },
+  {
+   "name": "Chesapeake Road (west)",
+   "km": 657.2,
+   "type": "access",
+   "next_km": 8.5
+  },
+  {
+   "name": "Lake Maringup Campsite",
+   "km": 665.7,
+   "type": "campsite",
+   "next_km": 9.1
+  },
+  {
+   "name": "Chesapeake Road (east)",
+   "km": 674.8,
+   "type": "access",
+   "next_km": 8.0
+  },
+  {
+   "name": "Deeside Coast Road",
+   "km": 682.8,
+   "type": "access",
+   "next_km": 3.7
+  },
+  {
+   "name": "Dog Road",
+   "km": 686.5,
+   "type": "access",
+   "next_km": 4.8
+  },
+  {
+   "name": "Dog Pool Campsite",
+   "km": 691.3,
+   "type": "campsite",
+   "next_km": 19.4
+  },
+  {
+   "name": "Mt Chance Campsite",
+   "km": 710.7,
+   "type": "campsite",
+   "next_km": 10.6
+  },
+  {
+   "name": "Broke Inlet Road",
+   "km": 721.3,
+   "type": "access",
+   "next_km": 11.0
+  },
+  {
+   "name": "Woolbales Campsite",
+   "km": 732.3,
+   "type": "campsite",
+   "next_km": 10.7
+  },
+  {
+   "name": "Mandalay Beach Road",
+   "km": 743.0,
+   "type": "access",
+   "next_km": 7.7
+  },
+  {
+   "name": "Long Point Campsite",
+   "km": 750.7,
+   "type": "campsite",
+   "next_km": 11.7
+  },
+  {
+   "name": "Shedley Drive/Deep River Bridge",
+   "km": 762.4,
+   "type": "access",
+   "next_km": 1.5
+  },
+  {
+   "name": "Mt Clare Campsite",
+   "km": 763.9,
+   "type": "campsite",
+   "next_km": 1.0
+  },
+  {
+   "name": "Tinglewood Drive",
+   "km": 764.9,
+   "type": "access",
+   "next_km": 3.0
+  },
+  {
+   "name": "John Rate Lookout",
+   "km": 767.9,
+   "type": "access",
+   "next_km": 1.6
+  },
+  {
+   "name": "Isle Road",
+   "km": 769.5,
+   "type": "access",
+   "next_km": 1.4
+  },
+  {
+   "name": "Rest Point Road",
+   "km": 770.9,
+   "type": "access",
+   "next_km": 3.4
+  },
+  {
+   "name": "Walpole",
+   "km": 774.3,
+   "type": "town",
+   "next_km": 3.2
+  },
+  {
+   "name": "Coalmine Beach (Knoll Drive)",
+   "km": 777.5,
+   "type": "access",
+   "next_km": 1.6
+  },
+  {
+   "name": "South Coast Highway (west)",
+   "km": 779.1,
+   "type": "access",
+   "next_km": 2.5
+  },
+  {
+   "name": "Hill Top Lookout",
+   "km": 781.6,
+   "type": "access",
+   "next_km": 3.0
+  },
+  {
+   "name": "Giant Tingle Tree (Gully Rd)",
+   "km": 784.6,
+   "type": "access",
+   "next_km": 8.2
+  },
+  {
+   "name": "Frankland River Campsite",
+   "km": 792.8,
+   "type": "campsite",
+   "next_km": 2.8
+  },
+  {
+   "name": "Sappers Bridge",
+   "km": 795.6,
+   "type": "access",
+   "next_km": 10.0
+  },
+  {
+   "name": "Tree Top Walk",
+   "km": 805.6,
+   "type": "access",
+   "next_km": 1.7
+  },
+  {
+   "name": "Giants Campsite",
+   "km": 807.3,
+   "type": "campsite",
+   "next_km": 2.8
+  },
+  {
+   "name": "South Coast Highway (east)",
+   "km": 810.1,
+   "type": "access",
+   "next_km": 6.8
+  },
+  {
+   "name": "Ficifolia Road",
+   "km": 816.9,
+   "type": "access",
+   "next_km": 3.6
+  },
+  {
+   "name": "Conspicuous Beach",
+   "km": 820.5,
+   "type": "access",
+   "next_km": 3.5
+  },
+  {
+   "name": "Rame Head Campsite",
+   "km": 824.0,
+   "type": "campsite",
+   "next_km": 12.8
+  },
+  {
+   "name": "Peaceful Bay",
+   "km": 836.8,
+   "type": "town",
+   "next_km": 3.3
+  },
+  {
+   "name": "Peaceful Bay Road (north)",
+   "km": 840.1,
+   "type": "access",
+   "next_km": 20.1
+  },
+  {
+   "name": "Boat Harbour Campsite",
+   "km": 860.2,
+   "type": "campsite",
+   "next_km": 0.4
+  },
+  {
+   "name": "Boat Harbour Road (4WD)",
+   "km": 860.6,
+   "type": "access",
+   "next_km": 10.8
+  },
+  {
+   "name": "Parry Beach Road",
+   "km": 871.4,
+   "type": "access",
+   "next_km": 0.5
+  },
+  {
+   "name": "Parry Beach Camping Area",
+   "km": 871.9,
+   "type": "access",
+   "next_km": 8.0
+  },
+  {
+   "name": "William Bay Road",
+   "km": 879.9,
+   "type": "access",
+   "next_km": 1.0
+  },
+  {
+   "name": "William Bay Campsite",
+   "km": 880.9,
+   "type": "campsite",
+   "next_km": 5.9
+  },
+  {
+   "name": "Lights Beach Carpark",
+   "km": 886.8,
+   "type": "access",
+   "next_km": 2.8
+  },
+  {
+   "name": "Lights Road",
+   "km": 889.6,
+   "type": "access",
+   "next_km": 5.4
+  },
+  {
+   "name": "Ocean Beach Road",
+   "km": 895.0,
+   "type": "access",
+   "next_km": 6.5
+  },
+  {
+   "name": "Denmark Trail Head (Denmark River/rivermouth)",
+   "km": 901.5,
+   "type": "town",
+   "next_km": 17.1
+  },
+  {
+   "name": "Nullaki Boat Ramp (Reeves Grove via sandbar)",
+   "km": 918.6,
+   "type": "access",
+   "next_km": 4.3
+  },
+  {
+   "name": "Eden Road Gate",
+   "km": 922.9,
+   "type": "access",
+   "next_km": 5.6
+  },
+  {
+   "name": "Nullaki Campsite",
+   "km": 928.5,
+   "type": "campsite",
+   "next_km": 12.2
+  },
+  {
+   "name": "Tennessee Road South (Lowlands Beach)",
+   "km": 940.7,
+   "type": "access",
+   "next_km": 4.8
+  },
+  {
+   "name": "West Cape Howe Campsite",
+   "km": 945.5,
+   "type": "campsite",
+   "next_km": 12.3
+  },
+  {
+   "name": "Shelley Beach Road",
+   "km": 957.8,
+   "type": "access",
+   "next_km": 4.2
+  },
+  {
+   "name": "Torbay Campsite",
+   "km": 962.0,
+   "type": "campsite",
+   "next_km": 2.6
+  },
+  {
+   "name": "Cosy Corner Picnic Area",
+   "km": 964.6,
+   "type": "access",
+   "next_km": 5.7
+  },
+  {
+   "name": "Mutton Bird Road Carpark",
+   "km": 970.3,
+   "type": "access",
+   "next_km": 1.8
+  },
+  {
+   "name": "Mutton Bird Road",
+   "km": 972.1,
+   "type": "access",
+   "next_km": 2.9
+  },
+  {
+   "name": "Mutton Bird Campsite",
+   "km": 975.0,
+   "type": "campsite",
+   "next_km": 9.1
+  },
+  {
+   "name": "Sandpatch Carpark",
+   "km": 984.1,
+   "type": "access",
+   "next_km": 3.0
+  },
+  {
+   "name": "Sandpatch Campsite",
+   "km": 987.1,
+   "type": "campsite",
+   "next_km": 5.2
+  },
+  {
+   "name": "Frenchman Bay Road",
+   "km": 992.3,
+   "type": "access",
+   "next_km": 7.7
+  },
+  {
+   "name": "Albany",
+   "km": 1000.0,
+   "type": "town",
+   "next_km": 0.0
+  }
+ ]
+}

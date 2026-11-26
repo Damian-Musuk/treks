@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Post update</title>
+  <meta name="theme-color" content="#2f4a3a">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="../icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../icons/icon-192.png">
+  <link rel="stylesheet" href="../css/app.css">
+  <style>
+    body { padding-bottom: 24px; }
+    .post { display: grid; gap: 12px; }
+    .post label { display: grid; gap: 4px; font-size: 14px; font-weight: 600; }
+    .post select, .post input:not([type=checkbox]):not([type=radio]):not([type=file]), .post textarea {
+      width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); font-weight: 400; min-height: 44px;
+    }
+    .post textarea { min-height: 96px; resize: vertical; }
+    .kinds { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .kinds label { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 12px; padding: 10px; font-weight: 600; cursor: pointer; background: var(--bg); }
+    .kinds input { accent-color: var(--brand); width: 18px; height: 18px; }
+    .kinds label:has(input:checked) { border-color: var(--brand); background: color-mix(in srgb, var(--camp) 14%, var(--surface)); }
+    .big { width: 100%; padding: 14px; font-size: 17px; font-weight: 700; border-radius: 12px; border: 0; background: var(--brand); color: var(--brand-ink); cursor: pointer; min-height: 52px; }
+    .big:disabled { opacity: .5; }
+    .queue li { display: flex; justify-content: space-between; gap: 8px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 14px; }
+    .queue { list-style: none; margin: 0; padding: 0; }
+    .msg { padding: 10px 14px; border-radius: 12px; font-size: 14px; margin: 0 0 12px; }
+    .msg.ok { background: color-mix(in srgb, var(--camp) 16%, var(--surface)); }
+    .msg.err { background: color-mix(in srgb, var(--warn) 16%, var(--surface)); }
+    .preview { max-width: 100%; border-radius: 10px; display: block; }
+    .row { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    details.card summary { cursor: pointer; font-weight: 700; }
+    code { font-size: 13px; background: var(--bg); padding: 1px 5px; border-radius: 5px; }
+    .small { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="../icons/icon.svg" alt="" width="32" height="32">
+      <div><h1>Post an update</h1><p class="tag">Only for Damian · not linked from the site</p></div>
+    </div>
+    <span id="net" class="net" role="status" aria-live="polite"></span>
+  </header>
+  <main id="view"><p class="empty">Loading…</p></main>
+  <script type="module" src="post.js"></script>
+</body>
+</html>
