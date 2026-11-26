@@ -1,5 +1,5 @@
 // Offline cache for the Bibbulmun app. Bump VERSION whenever any file changes.
-const VERSION = "v1.1.0";
+const VERSION = "v1.2.0";
 const CACHE = "bibbulmun-" + VERSION;
 const FILES = [
   "./",
@@ -11,6 +11,7 @@ const FILES = [
   "data/progress.json",
   "post/",
   "post/post.js",
+  "post/manifest.webmanifest",
   "data/stops.json",
   "manifest.webmanifest",
   "icons/icon.svg",

@@ -55,7 +55,7 @@ function showNet() {
 /* ---------- GitHub ---------- */
 async function gh(path, opts = {}) {
   const s = settings();
-  const res = await fetch(`https://api.github.com/repos/${s.owner}/${s.repo}/${path}`, {
+  const res = await fetch(`https://api.github.com/repos/${s.owner}/${s.repo}${path ? "/" + path : ""}`, {
     ...opts,
     headers: { Authorization: `Bearer ${s.token}`, Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", ...(opts.headers || {}) },
   });
@@ -150,7 +150,7 @@ async function render() {
   const defKm = (nextStop || STOPS[0] || { km: 0 }).km;
 
   if (!s.token) {
-    view.innerHTML = setupHtml(s, true);
+    view.innerHTML = (flash && !flash.ok ? `<p class="msg err" role="status">${esc(flash.t)}</p>` : "") + setupHtml(s, true);
     bindSetup();
     return;
   }
@@ -228,22 +228,21 @@ async function render() {
   bindSetup();
 }
 
+// A plain username + password form, so the phone's password manager can save the token once
+// and fill it in on every damian-mus.uk app. The "password" is the GitHub token.
 function setupHtml(s, first) {
-  return `<form class="post" id="setup" ${first ? 'style="margin-top:0"' : ""}>
-    ${first ? `<section class="hero small" style="margin:0"><h2>Set up posting</h2><p>Do this once at home, on the phone you'll walk with.</p></section>
-    <ol class="small" style="margin:0;padding-left:18px">
-      <li>On GitHub, go to Settings → Developer settings → Fine-grained tokens → Generate new token.</li>
-      <li>Repository access: only <code>${esc(s.owner)}/${esc(s.repo)}</code>. Permissions: Contents, read and write. Pick a long expiry so it lasts the walk.</li>
-      <li>Paste it below. It's kept on this phone only.</li>
-    </ol>` : ""}
-    <label>GitHub token <input name="token" type="password" autocomplete="off" value="${esc(s.token)}" placeholder="github_pat_…"></label>
-    <div class="row2">
+  return `<form class="post" id="setup" autocomplete="on" ${first ? 'style="margin-top:0"' : ""}>
+    <input type="text" name="username" autocomplete="username" value="damian" readonly hidden aria-hidden="true">
+    <label>${first ? "Please enter password" : "Password"} <input name="password" type="password" autocomplete="current-password" autocapitalize="off" spellcheck="false" value="${first ? "" : esc(s.token)}" ${first ? "autofocus" : ""}></label>
+    ${first ? "" : `<div class="row2">
       <label>Owner <input name="owner" value="${esc(s.owner)}"></label>
       <label>Repo <input name="repo" value="${esc(s.repo)}"></label>
     </div>
-    <label>Branch the site deploys from <input name="branch" value="${esc(s.branch)}"></label>
-    <div class="row"><button class="big" type="submit" style="flex:1">Save and test</button></div>
-    ${!first ? `<button type="button" class="ghost" id="forget">Forget token on this phone</button>` : ""}
+    <label>Branch the site deploys from <input name="branch" value="${esc(s.branch)}"></label>`}
+    <div class="row"><button class="big" type="submit" style="flex:1">${first ? "Sign in" : "Save and test"}</button></div>
+    ${first ? `<details class="small"><summary>No password?</summary>
+      <p>The password is a GitHub fine-grained token with Contents: read and write on <code>${esc(s.owner)}/${esc(s.repo)}</code>. It's kept on this phone only.</p>
+    </details>` : `<button type="button" class="ghost" id="forget">Sign out on this phone</button>`}
   </form>`;
 }
 
@@ -252,16 +251,24 @@ function bindSetup() {
   if (!f) return;
   f.addEventListener("submit", async (e) => {
     e.preventDefault();
-    saveSettings({ owner: f.owner.value.trim(), repo: f.repo.value.trim(), branch: f.branch.value.trim() || "main", token: f.token.value.trim() });
+    const s = settings();
+    saveSettings({
+      owner: f.owner ? f.owner.value.trim() : s.owner,
+      repo: f.repo ? f.repo.value.trim() : s.repo,
+      branch: f.branch ? f.branch.value.trim() || "main" : s.branch,
+      token: f.password.value.trim(),
+    });
     try {
       const r = await gh("");
-      if (r.status === 404) throw new Error("repo not found, or the token can't see it");
+      if (r.status === 401) throw new Error("that password didn't work");
+      if (r.status === 404) throw new Error("repo not found, or the password can't see it");
       const j = await r.json();
-      if (j.permissions && !j.permissions.push) throw new Error("token can read but not write");
+      if (!j.permissions?.push) throw new Error("that password can read but not post");
       const p = await readProgress(); PROGRESS = p.data;
-      flash = { ok: true, t: "Connected. You're ready to post." };
+      flash = { ok: true, t: "Signed in. You're ready to post." };
     } catch (err) {
-      flash = { ok: false, t: `Couldn't connect: ${err.message}` };
+      if (!s.token) saveSettings({ ...settings(), token: "" });
+      flash = { ok: false, t: `Couldn't sign in: ${err.message}` };
     }
     render();
   });
